@@ -664,3 +664,16 @@ Can't verify CSRF token authenticity.
 Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 12.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-27 12:23:09 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 2799ms (Views: 2797.7ms)
+
+
+Started GET "/api/v1/fruits.json" for 127.0.0.1 at 2018-07-27 12:23:12 -0400
+Processing by Api::V1::FruitsController#index as JSON
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+Completed 200 OK in 45ms (Views: 36.7ms | ActiveRecord: 3.7ms)
+
+
