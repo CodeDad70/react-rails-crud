@@ -411,3 +411,17 @@ Processing by Api::V1::FruitsController#index as JSON
 Completed 200 OK in 55ms (Views: 43.8ms | ActiveRecord: 6.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-27 11:14:31 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1563ms (Views: 1539.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/fruits.json" for 127.0.0.1 at 2018-07-27 11:14:34 -0400
+Processing by Api::V1::FruitsController#index as JSON
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+Completed 200 OK in 68ms (Views: 42.8ms | ActiveRecord: 1.3ms)
+
+
