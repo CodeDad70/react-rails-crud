@@ -1,19 +1,5 @@
-class AllFruits extends React.Component {
-  
-  constructor(props) {
-    super(props)
-    this.state = {
-      fruits: []
-    };
-  }
+const AllFruits = (props) => {
 
-  componentDidMount() {
-    fetch('api/v1/fruits.json')
-      .then((response)=> {return response.json()})
-      .then((data)=> {this.setState({fruits:data}) })
-  }
-
-  render() {
     let fruits = this.state.fruits.map ((fruit)  => {
       return (
         <div key={fruit.id}>
@@ -28,5 +14,5 @@ class AllFruits extends React.Component {
         {fruits}
       </div>
     )
-  }
 }
+
