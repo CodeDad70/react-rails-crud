@@ -13,7 +13,9 @@ const NewFruit = (props) => {
         placeholder = 'Enter a description'
       /> <br/>
 
-      <button>Submit</button>  
+      <button onClick={()=>props.handleFormSubmit(formFields.name.value, formFields.description.value)}>
+        Submit
+      </button>  
 
 
     </div>    
