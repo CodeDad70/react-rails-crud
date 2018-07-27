@@ -1,10 +1,10 @@
 const AllFruits = (props) => {
 
-    let fruits = this.state.fruits.map ((fruit)  => {
+    let fruits = props.fruits.map ((fruit)  => {
       return (
         <div key={fruit.id}>
-        <h1>{fruit.name}</h1>
-        <p>{fruit.description}</p>
+          <h1>{fruit.name}</h1>
+          <p>{fruit.description}</p>
         </div> 
       )
     })
@@ -15,4 +15,3 @@ const AllFruits = (props) => {
       </div>
     )
 }
-
