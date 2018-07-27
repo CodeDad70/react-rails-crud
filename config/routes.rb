@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
 
-  root to: 'site#home'
+  root to: 'home#index'
 
   namespace :api do 
     namespace :v1 do
       resources :fruits, only: [:index, :create, :update, :destroy]
     end
   end
-    
+
+  
+
 end
+
 
 
