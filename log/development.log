@@ -365,3 +365,23 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 8186ms (Views: 8184.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-26 22:43:51 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3762ms (Views: 3756.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-26 22:48:58 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2063ms (Views: 2060.9ms)
+
+
+Started GET "/api/v1/fruits.json" for 127.0.0.1 at 2018-07-26 22:49:00 -0400
+Processing by Api::V1::FruitsController#index as JSON
+  [1m[36mFruit Load (0.4ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+Completed 200 OK in 49ms (Views: 36.2ms | ActiveRecord: 1.9ms)
+
+
