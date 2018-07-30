@@ -54,7 +54,7 @@ class Body extends React.Component {
     fetch(`http://localhost.3000/api/v1/fruits/${fruit.id}`,
       {
         method: 'PUT',
-        body: json.stringify({fruit:fruit}),
+        body: JSON.stringify({fruit:fruit}),
         headers: {
           'Content-type' : 'application/json'
         }
